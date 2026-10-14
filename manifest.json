@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Sleeper Panel Expander",
+  "version": "1.0",
+  "description": "Toggles Sleeper league page panels.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://sleeper.com/leagues/*"
+  ],
+  "action": {
+    "default_title": "Toggle Panel",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
